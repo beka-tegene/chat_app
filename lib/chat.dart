@@ -30,7 +30,7 @@ class _ChatPageState extends State<ChatPage> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back_ios),
           onPressed: () {},
           color: Colors.white,
         ),
@@ -85,7 +85,7 @@ class _ChatPageState extends State<ChatPage> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white),
+                      border: Border.all(color: Colors.grey),
                       borderRadius: BorderRadius.circular(25.0),
                     ),
                     padding:const EdgeInsets.symmetric(horizontal: 10.0),
@@ -108,8 +108,8 @@ class _ChatPageState extends State<ChatPage> {
                         ),
                         IconButton(
                           icon:const Icon(
-                            Icons.send,
-                            color: Colors.amber,
+                            Icons.arrow_circle_up_rounded,
+                            color: Colors.pink,
                           ),
                           onPressed: _sendMessage,
                           iconSize: 30,
